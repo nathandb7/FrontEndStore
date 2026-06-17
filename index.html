@@ -1,202 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FrontEnd Store</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/normalize.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FrontEnd Store | Editorial Shop</title>
+  <meta name="description" content="E-commerce editorial de remeras y piezas graficas para construir, vestir y repetir.">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/app.js" defer></script>
 </head>
+<body class="outfit-theme">
+  <div class="page-loader" data-loader><span>000</span></div>
 
-<body>
-    <header class="header">
-        <a href="index.html">
-            <img class="header__logo" src="img/logo.png" alt="Logotipo">
-        </a>
-    </header>
-
-    <nav class="navegacion">
-        <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Tienda</a>
-        <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+  <header class="site-header" data-header>
+    <a class="site-header__brand" href="index.html" aria-label="Volver al inicio">++</a>
+    <nav class="site-header__nav" aria-label="Navegacion principal">
+      <a href="index.html#shop">Shop</a>
+      <a href="bag.html" data-bag-count>Bag (0)</a>
+      <button class="menu-toggle" type="button" data-menu-open>Menu</button>
     </nav>
+  </header>
 
-    <main>
-        <h1>Nuestros Productos</h1>
+  <div class="menu-overlay" data-menu aria-hidden="true">
+    <button class="menu-overlay__close" type="button" data-menu-close>Close</button>
+    <nav aria-label="Menu principal">
+      <a href="index.html#shop">Shop</a>
+      <a href="bag.html">Bag</a>
+      <a href="checkout.html">Checkout</a>
+      <a href="shipping.html">Shipping</a>
+      <a href="index.html#about">Why</a>
+    </nav>
+    <p>Disenado en capas. Pensado para moverse. Hecho para usarse.</p>
+  </div>
 
-        <div class="grid">
-            <div class="producto">
-                <a href="productos.html">
-                    <img class="producto__imagen" src="img/1.jpg" alt="imagen camisa">
-                    <div class="producto__informacion">
-                        <p class="producto__nombre">Vuejs</p>
-                        <p class="producto__precio">$25</p>
-                    </div>
-                </a>
-            </div>
-            <!-- producto -->
-
-            <div class="producto">
-                <a href="productos.html">
-                    <img class="producto__imagen" src="img/2.jpg" alt="imagen camisa">
-                    <div class="producto__informacion">
-                        <p class="producto__nombre">Vuejs</p>
-                        <p class="producto__precio">$25</p>
-                    </div>
-                </a>
-            </div>
-            <!-- producto -->
-
-            <div class="producto">
-                <a href="productos.html">
-                    <img class="producto__imagen" src="img/3.jpg" alt="imagen camisa">
-                    <div class="producto__informacion">
-                        <p class="producto__nombre">Vuejs</p>
-                        <p class="producto__precio">$25</p>
-                    </div>
-                </a>
-            </div>
-            <!-- producto -->
-
-            <div class="producto">
-                <a href="productos.html">
-                    <img class="producto__imagen" src="img/4.jpg" alt="imagen camisa">
-                    <div class="producto__informacion">
-                        <p class="producto__nombre">Redux</p>
-                        <p class="producto__precio">$25</p>
-                    </div>
-                </a>
-            </div>
-            <!-- producto -->
-
-            <div class="producto">
-                <a href="productos.html">
-                    <img class="producto__imagen" src="img/5.jpg" alt="imagen camisa">
-                    <div class="producto__informacion">
-                        <p class="producto__nombre">Node.js</p>
-                        <p class="producto__precio">$25</p>
-                    </div>
-                </a>
-            </div>
-            <!-- producto -->
-
-            <div class="producto">
-                <a href="productos.html">
-                    <img class="producto__imagen" src="img/6.jpg" alt="imagen camisa">
-                    <div class="producto__informacion">
-                        <p class="producto__nombre">SASS</p>
-                        <p class="producto__precio">$25</p>
-                    </div>
-                </a>
-            </div>
-            <!-- producto -->
-
-            <div class="producto">
-                <a href="productos.html">
-                    <img class="producto__imagen" src="img/7.jpg" alt="imagen camisa">
-                    <div class="producto__informacion">
-                        <p class="producto__nombre">HTML5</p>
-                        <p class="producto__precio">$25</p>
-                    </div>
-                </a>
-            </div>
-            <!-- producto -->
-
-            <div class="producto">
-                <a href="productos.html">
-                    <img class="producto__imagen" src="img/8.jpg" alt="imagen camisa">
-                    <div class="producto__informacion">
-                        <p class="producto__nombre">Github</p>
-                        <p class="producto__precio">$25</p>
-                    </div>
-                </a>
-            </div>
-            <!-- producto -->
-
-            <div class="producto">
-                <a href="productos.html">
-                    <img class="producto__imagen" src="img/9.jpg" alt="imagen camisa">
-                    <div class="producto__informacion">
-                        <p class="producto__nombre">Bulma</p>
-                        <p class="producto__precio">$25</p>
-                    </div>
-                </a>
-            </div>
-            <!-- producto -->
-
-            <div class="producto">
-                <a href="productos.html">
-                    <img class="producto__imagen" src="img/10.jpg" alt="imagen camisa">
-                    <div class="producto__informacion">
-                        <p class="producto__nombre">TypeScript</p>
-                        <p class="producto__precio">$25</p>
-                    </div>
-                </a>
-            </div>
-            <!-- producto -->
-
-            <div class="producto">
-                <a href="productos.html">
-                    <img class="producto__imagen" src="img/11.jpg" alt="imagen camisa">
-                    <div class="producto__informacion">
-                        <p class="producto__nombre">Drupal</p>
-                        <p class="producto__precio">$25</p>
-                    </div>
-                </a>
-            </div>
-            <!-- producto -->
-
-            <div class="producto">
-                <a href="productos.html">
-                    <img class="producto__imagen" src="img/12.jpg" alt="imagen camisa">
-                    <div class="producto__informacion">
-                        <p class="producto__nombre">JavaScript</p>
-                        <p class="producto__precio">$25</p>
-                    </div>
-                </a>
-            </div>
-            <!-- producto -->
-
-            <div class="producto">
-                <a href="productos.html">
-                    <img class="producto__imagen" src="img/13.jpg" alt="imagen camisa">
-                    <div class="producto__informacion">
-                        <p class="producto__nombre">GraphQL</p>
-                        <p class="producto__precio">$25</p>
-                    </div>
-                </a>
-            </div>
-            <!-- producto -->
-
-            <div class="producto">
-                <a href="productos.html">
-                    <img class="producto__imagen" src="img/14.jpg" alt="imagen camisa">
-                    <div class="producto__informacion">
-                        <p class="producto__nombre">Wordpress</p>
-                        <p class="producto__precio">$25</p>
-                    </div>
-                </a>
-            </div>
-            <!-- producto -->
-
-            <div class="grafico grafico--camisas">
-
-            </div>
-
-            <div class="grafico grafico--node">
-
-            </div>
-
+  <main>
+    <section class="ecom-hero hero-section">
+      <div class="ecom-hero__copy">
+        <p class="eyebrow">000 / FrontEnd Store</p>
+        <h1 class="ecom-hero__title hero-title">Outfit</h1>
+      </div>
+      <div class="ecom-hero__side">
+        <div class="hero-rule"></div>
+        <div class="intro-grid">
+          <span class="microcopy">APPAREL</span>
+          <div>
+            <span class="microcopy">WHY</span>
+            <p>Una seleccion de piezas graficas con energia de estudio, corte urbano y obsesion por el detalle.</p>
+          </div>
+          <div>
+            <a class="micro-link" href="#shop">SHOP DROP</a>
+            <a class="micro-link" href="shipping.html">SHIPPING & RETURNS</a>
+          </div>
+          <span class="microcopy">2026</span>
         </div>
-    </main>
+      </div>
+    </section>
 
-    <footer class="footer">
-        <p class="footer__texto">Front End Store - Todos los derechos Reservados 2022.</p>
-    </footer>
+    <section class="product-section products-section" id="shop">
+      <div class="section-heading" data-reveal>
+        <p>001 / Shop</p>
+        <h2>Fresh pieces.<br>Sharp attitude.</h2>
+      </div>
+      <div class="product-grid" data-product-grid></div>
+    </section>
+
+    <section class="feature-split" id="about">
+      <div class="feature-split__content" data-reveal>
+        <p class="eyebrow">002 / Why</p>
+        <h2>Uniformes para ideas que no se quedan quietas.</h2>
+        <p>Trabajamos con los assets existentes del proyecto y los llevamos a una experiencia mas editorial: grilla asimetrica, productos con variantes, carrito persistente y navegacion minima.</p>
+        <a class="text-button" href="shipping.html">Shipping & returns</a>
+      </div>
+      <div class="feature-split__media" data-reveal>
+        <img src="img/nosotros.jpg" alt="Detalle editorial de la coleccion">
+      </div>
+    </section>
+
+    <section class="spotlight">
+      <div class="spotlight__copy" data-reveal>
+        <p class="eyebrow">003 / Featured</p>
+        <h2>Drop<br>ready.</h2>
+      </div>
+      <div class="spotlight__grid">
+        <a class="spotlight-card" href="product.html?id=8" data-reveal>
+          <img src="img/8.jpg" alt="Remera destacada Github Grid">
+          <span>View piece</span>
+        </a>
+        <a class="spotlight-card spotlight-card--dark" href="product.html?id=12" data-reveal>
+          <img src="img/12.jpg" alt="Remera destacada Script Layer">
+          <span>View piece</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-rule"></div>
+    <div class="site-footer__statement footer-intro">
+      <p>Made to compile.</p>
+      <p>Built to repeat.</p>
+    </div>
+    <div class="site-footer__grid footer-grid">
+      <div>
+        <strong>FrontEnd Store</strong>
+        <p>Rivera, Uruguay</p>
+      </div>
+      <nav aria-label="Footer">
+        <a href="index.html#shop">Shop</a>
+        <a href="checkout.html">Checkout</a>
+        <a href="shipping.html">Shipping</a>
+        <a href="bag.html">Bag</a>
+      </nav>
+      <div><p>Vanilla JS</p><p>Local bag</p></div>
+      <div><p>Editorial grid</p><p>Premium palette</p></div>
+    </div>
+    <h2 class="site-footer__logo">FRONTEND</h2>
+    <div class="footer-bottom">
+      <p>By <a href="https://nathandebarros.com" target="_blank" rel="noopener noreferrer">Nathan de Barros</a></p>
+      <p>&copy; 2026 Todos los derechos reservados.</p>
+    </div>
+  </footer>
 </body>
-
 </html>

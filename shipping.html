@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shipping & Returns | FrontEnd Store</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body class="outfit-theme">
+  <div class="page-loader" data-loader><span>000</span></div>
+  <header class="site-header" data-header>
+    <a class="site-header__brand" href="index.html">++</a>
+    <nav class="site-header__nav" aria-label="Navegacion principal">
+      <a href="index.html#shop">Shop</a>
+      <a href="bag.html" data-bag-count>Bag (0)</a>
+      <button class="menu-toggle" type="button" data-menu-open>Menu</button>
+    </nav>
+  </header>
+  <div class="menu-overlay" data-menu aria-hidden="true">
+    <button class="menu-overlay__close" type="button" data-menu-close>Close</button>
+    <nav aria-label="Menu principal">
+      <a href="index.html#shop">Shop</a>
+      <a href="bag.html">Bag</a>
+      <a href="checkout.html">Checkout</a>
+      <a href="shipping.html">Shipping</a>
+      <a href="index.html#about">Why</a>
+    </nav>
+    <p>Informacion clara, visual simple, lista para conectar con backend.</p>
+  </div>
+
+  <main class="shipping-page">
+    <section class="shipping-hero" data-reveal>
+      <p class="eyebrow">004 / Shipping & returns</p>
+      <h1>Clear rules.<br>No noise.</h1>
+    </section>
+    <section class="policy-grid">
+      <article class="policy-card" data-reveal>
+        <span>01</span>
+        <h2>Shipping</h2>
+        <p>Despachos demo dentro de 48 horas habiles. La estructura queda preparada para integrar tarifas reales.</p>
+      </article>
+      <article class="policy-card" data-reveal>
+        <span>02</span>
+        <h2>Returns</h2>
+        <p>Cambios dentro de 15 dias si la prenda esta sin uso y con su empaque original.</p>
+      </article>
+      <article class="policy-card" data-reveal>
+        <span>03</span>
+        <h2>Sizes</h2>
+        <p>Los talles son seleccionables en cada producto. Para produccion se puede sumar guia dinamica.</p>
+      </article>
+      <article class="policy-card policy-card--dark" data-reveal>
+        <span>04</span>
+        <h2>Checkout</h2>
+        <p>El flujo actual es front-end: carrito persistente en localStorage y CTA de checkout demostrativo.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-rule"></div>
+    <div class="site-footer__statement"><p>Fast to ship.</p><p>Easy to read.</p></div>
+    <div class="site-footer__grid footer-grid">
+      <div><strong>FrontEnd Store</strong><p>Rivera, Uruguay</p></div>
+      <nav aria-label="Footer"><a href="index.html#shop">Shop</a><a href="checkout.html">Checkout</a><a href="shipping.html">Shipping</a><a href="bag.html">Bag</a></nav>
+    </div>
+    <h2 class="site-footer__logo">POLICY</h2>
+    <div class="footer-bottom">
+      <p>By <a href="https://nathandebarros.com" target="_blank" rel="noopener noreferrer">Nathan de Barros</a></p>
+      <p>&copy; 2026 Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>

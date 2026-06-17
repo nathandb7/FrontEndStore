@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bag | FrontEnd Store</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body class="outfit-theme">
+  <div class="page-loader" data-loader><span>000</span></div>
+  <header class="site-header" data-header>
+    <a class="site-header__brand" href="index.html">++</a>
+    <nav class="site-header__nav" aria-label="Navegacion principal">
+      <a href="index.html#shop">Shop</a>
+      <a href="bag.html" data-bag-count>Bag (0)</a>
+      <button class="menu-toggle" type="button" data-menu-open>Menu</button>
+    </nav>
+  </header>
+  <div class="menu-overlay" data-menu aria-hidden="true">
+    <button class="menu-overlay__close" type="button" data-menu-close>Close</button>
+    <nav aria-label="Menu principal">
+      <a href="index.html#shop">Shop</a>
+      <a href="bag.html">Bag</a>
+      <a href="checkout.html">Checkout</a>
+      <a href="shipping.html">Shipping</a>
+      <a href="index.html#about">Why</a>
+    </nav>
+    <p>El checkout es demo, pero el carrito persiste en este navegador.</p>
+  </div>
+
+  <main class="bag-page">
+    <section class="bag-hero" data-reveal>
+      <p class="eyebrow">003 / Bag</p>
+      <h1>Your Bag</h1>
+    </section>
+    <section class="bag-layout">
+      <div class="bag-list" data-bag-list></div>
+      <aside class="bag-summary" data-bag-summary>
+        <p>Subtotal</p>
+        <strong data-bag-subtotal>$0.00</strong>
+        <a class="checkout-button" href="checkout.html">Checkout</a>
+        <small>Taxes and shipping are calculated in the next screen.</small>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-rule"></div>
+    <div class="site-footer__statement"><p>Your pieces.</p><p>Almost there.</p></div>
+    <div class="site-footer__grid footer-grid">
+      <div><strong>FrontEnd Store</strong><p>Rivera, Uruguay</p></div>
+      <nav aria-label="Footer"><a href="index.html#shop">Shop</a><a href="checkout.html">Checkout</a><a href="shipping.html">Shipping</a><a href="bag.html">Bag</a></nav>
+    </div>
+    <h2 class="site-footer__logo">BAG</h2>
+    <div class="footer-bottom">
+      <p>By <a href="https://nathandebarros.com" target="_blank" rel="noopener noreferrer">Nathan de Barros</a></p>
+      <p>&copy; 2026 Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>

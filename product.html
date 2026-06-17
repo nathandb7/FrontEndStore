@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Producto | FrontEnd Store</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body class="outfit-theme">
+  <div class="page-loader" data-loader><span>000</span></div>
+  <header class="site-header" data-header>
+    <a class="site-header__brand" href="index.html">++</a>
+    <nav class="site-header__nav" aria-label="Navegacion principal">
+      <a href="index.html#shop">Shop</a>
+      <a href="bag.html" data-bag-count>Bag (0)</a>
+      <button class="menu-toggle" type="button" data-menu-open>Menu</button>
+    </nav>
+  </header>
+  <div class="menu-overlay" data-menu aria-hidden="true">
+    <button class="menu-overlay__close" type="button" data-menu-close>Close</button>
+    <nav aria-label="Menu principal">
+      <a href="index.html#shop">Shop</a>
+      <a href="bag.html">Bag</a>
+      <a href="checkout.html">Checkout</a>
+      <a href="shipping.html">Shipping</a>
+      <a href="index.html#about">Why</a>
+    </nav>
+    <p>Elegi variante, talle y cantidad. El bag guarda todo localmente.</p>
+  </div>
+
+  <main class="product-page" data-product-page>
+    <a href="index.html#shop" class="return-link">&larr; Return to shop</a>
+    <section class="product-detail">
+      <div class="product-gallery" data-product-gallery></div>
+      <aside class="product-buybox" data-reveal>
+        <p class="product-buybox__label" data-product-category>Apparel</p>
+        <h1 data-product-title>Product</h1>
+        <p class="product-buybox__price" data-product-price>$0.00</p>
+        <p class="product-buybox__description" data-product-description></p>
+        <div class="option-group" data-color-options>
+          <span>Color</span>
+        </div>
+        <div class="option-group" data-size-options>
+          <span>Size</span>
+        </div>
+        <div class="quantity-control" aria-label="Cantidad">
+          <button type="button" data-qty-minus aria-label="Restar cantidad">-</button>
+          <strong data-qty>1</strong>
+          <button type="button" data-qty-plus aria-label="Sumar cantidad">+</button>
+        </div>
+        <button class="add-to-bag" type="button" data-add-to-bag>Add to bag</button>
+      </aside>
+    </section>
+    <section class="related-section">
+      <div class="section-heading" data-reveal>
+        <p>Related</p>
+        <h2>Keep<br>scrolling.</h2>
+      </div>
+      <div class="product-grid product-grid--related" data-related-products></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-rule"></div>
+    <div class="site-footer__statement"><p>Check the fit.</p><p>Then the bag.</p></div>
+    <div class="site-footer__grid footer-grid">
+      <div><strong>FrontEnd Store</strong><p>Rivera, Uruguay</p></div>
+      <nav aria-label="Footer"><a href="index.html#shop">Shop</a><a href="checkout.html">Checkout</a><a href="shipping.html">Shipping</a><a href="bag.html">Bag</a></nav>
+    </div>
+    <h2 class="site-footer__logo">PRODUCT</h2>
+    <div class="footer-bottom">
+      <p>By <a href="https://nathandebarros.com" target="_blank" rel="noopener noreferrer">Nathan de Barros</a></p>
+      <p>&copy; 2026 Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout | FrontEnd Store</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body class="outfit-theme">
+  <div class="page-loader" data-loader><span>000</span></div>
+  <header class="site-header" data-header>
+    <a class="site-header__brand" href="index.html">++</a>
+    <nav class="site-header__nav" aria-label="Navegacion principal">
+      <a href="index.html#shop">Shop</a>
+      <a href="bag.html" data-bag-count>Bag (0)</a>
+      <button class="menu-toggle" type="button" data-menu-open>Menu</button>
+    </nav>
+  </header>
+  <div class="menu-overlay" data-menu aria-hidden="true">
+    <button class="menu-overlay__close" type="button" data-menu-close>Close</button>
+    <nav aria-label="Menu principal">
+      <a href="index.html#shop">Shop</a>
+      <a href="bag.html">Bag</a>
+      <a href="checkout.html">Checkout</a>
+      <a href="shipping.html">Shipping</a>
+      <a href="index.html#about">Why</a>
+    </nav>
+    <p>Checkout demo con resumen del carrito guardado en este navegador.</p>
+  </div>
+
+  <main class="checkout-page" data-checkout-page>
+    <section class="checkout-hero" data-reveal>
+      <p class="eyebrow">004 / Checkout</p>
+      <h1>Finalizar<br>compra.</h1>
+    </section>
+
+    <ol class="checkout-steps" aria-label="Pasos de checkout">
+      <li><span>01</span> Contacto</li>
+      <li><span>02</span> Envio</li>
+      <li><span>03</span> Pago demo</li>
+    </ol>
+
+    <section class="checkout-layout">
+      <form class="checkout-form" data-checkout-form>
+        <fieldset>
+          <legend>Contacto</legend>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="tu@email.com" required>
+          </label>
+          <label>
+            Telefono
+            <input type="tel" name="phone" placeholder="+598 99 000 000">
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Envio</legend>
+          <label>
+            Nombre completo
+            <input type="text" name="name" placeholder="Nombre y apellido" required>
+          </label>
+          <label>
+            Direccion
+            <input type="text" name="address" placeholder="Calle, numero, apartamento" required>
+          </label>
+          <div class="checkout-form__row">
+            <label>
+              Ciudad
+              <input type="text" name="city" placeholder="Rivera" required>
+            </label>
+            <label>
+              Codigo postal
+              <input type="text" name="zip" placeholder="11000" required>
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Payment demo</legend>
+          <label>
+            Numero de tarjeta
+            <input type="text" name="card" inputmode="numeric" placeholder="4242 4242 4242 4242" required>
+          </label>
+          <div class="checkout-form__row">
+            <label>
+              Vencimiento
+              <input type="text" name="expiry" placeholder="12/28" required>
+            </label>
+            <label>
+              CVC
+              <input type="text" name="cvc" inputmode="numeric" placeholder="123" required>
+            </label>
+          </div>
+        </fieldset>
+
+        <button class="checkout-submit" type="submit">Comprar ahora</button>
+        <p class="checkout-note">Compra demo: no se envia informacion de pago ni se realiza ningun cobro.</p>
+      </form>
+
+      <aside class="checkout-summary" data-checkout-summary>
+        <p class="eyebrow">Tu pedido</p>
+        <div data-checkout-items></div>
+        <div class="checkout-totals">
+          <p><span>Subtotal</span><strong data-checkout-subtotal>$0.00</strong></p>
+          <p><span>Shipping</span><strong data-checkout-shipping>$0.00</strong></p>
+          <p><span>Total</span><strong data-checkout-total>$0.00</strong></p>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-rule"></div>
+    <div class="site-footer__statement"><p>Quiet luxury.</p><p>Fast flow.</p></div>
+    <div class="site-footer__grid footer-grid">
+      <div><strong>FrontEnd Store</strong><p>Rivera, Uruguay</p></div>
+      <nav aria-label="Footer"><a href="index.html#shop">Shop</a><a href="bag.html">Bag</a><a href="shipping.html">Shipping</a></nav>
+    </div>
+    <h2 class="site-footer__logo">CHECKOUT</h2>
+    <div class="footer-bottom">
+      <p>By <a href="https://nathandebarros.com" target="_blank" rel="noopener noreferrer">Nathan de Barros</a></p>
+      <p>&copy; 2026 Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
